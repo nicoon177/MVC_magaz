@@ -4,17 +4,20 @@ class Product
 {
     const SHOW_BY_DEFOULT = 6;
     
-    public static function getLatesProduct($count = self::SHOW_BY_DEFOULT, $page = 1)
+    public static function getLatesProduct($count = self::SHOW_BY_DEFOULT)
     {
-        $count = intval($count);
-        $page = intval($page);
-        $offset = $page * $count;
         
         $db = Db::getConnection();
         
+        $sql = 'SELECT id, name, price, is_new FROM product WHERE status = "1" ORDER BY id DESC LIMIT :count';
         
+        $result = $db->prepare($sql);
+        $result->bindParam(':count', $count, PDO::PARAM_INT);
         
-        $result = $db->query('SELECT id, name, price, is_new FROM product WHERE status = "1" ORDER BY id DESC LIMIT ' . $count . ' OFFSET ' . $offset );
+        $result->setFetchMode(PDO::FETCH_ASSOC);
+        
+        $result->execute();
+        
         
         
         $i = 0;
