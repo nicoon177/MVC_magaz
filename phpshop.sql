@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Час створення: Лис 28 2017 р., 17:46
+-- Час створення: Гру 11 2017 р., 18:43
 -- Версія сервера: 5.7.19
 -- Версія PHP: 7.1.7
 
@@ -82,8 +82,7 @@ INSERT INTO `product` (`id`, `name`, `category_id`, `code`, `price`, `availabili
 (43, 'Gazer Tegra Note 7', 14, 683364, 210, 1, 'Gazer', 'Экран 7\" IPS (1280x800) емкостный Multi-Touch / NVIDIA Tegra 4 (1.8 ГГц) / RAM 1 ГБ / 16 ГБ встроенной памяти + поддержка карт памяти microSD / Wi-Fi / Bluetooth 4.0 / основная камера 5 Мп, фронтальная - 0.3 Мп / GPS / ГЛОНАСС / Android 4.4.2 (KitKat) / вес 320 г', 1, 0, 1),
 (44, 'Монитор 23\" Dell E2314H Black', 15, 355025, 175, 1, 'Dell', 'С расширением Full HD Вы сможете рассмотреть мельчайшие детали. Dell E2314H предоставит Вам резкое и четкое изображение, с которым любая работа будет в удовольствие. Full HD 1920 x 1080 при 60 Гц разрешение (макс.)', 0, 0, 1),
 (45, 'Компьютер Everest Game ', 16, 1563832, 1320, 1, 'Everest', 'Everest Game 9085 — это компьютеры премимум класса, собранные на базе эксклюзивных компонентов, тщательно подобранных и протестированных лучшими специалистами нашей компании. Это топовый сегмент систем, который отвечает наилучшим характеристикам показателей качества и производительности.', 0, 0, 1),
-(59, 'tgjxtfxg', 13, 465634, 560, 1, 'ghtyefgd', 'djxtfgj', 1, 1, 1),
-(60, 'mermasidj', 14, 232323232, 3260, 1, 'asgdvujahg', 'ohgbufaxghalk\'hbv yghuofjhg', 1, 1, 1);
+(64, 'q', 13, 1111, 1, 1, '1q', 'q', 1, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -132,12 +131,10 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `name`, `email`, `password`, `role`) VALUES
-(3, 'Александр', 'alex@mail.com', '111111', ''),
-(4, 'Виктор Зинченко', 'zinchenko.us@gmail.com', '222222', ''),
-(5, 'Сергей', 'serg@mail.com', '111111', ''),
 (6, 'Nico', 'nicofofdn177@gmafil.comfg', '55555555', 'admin'),
 (7, 'Коля', 'qwert@gmail.com', '00000000', ''),
-(8, 'rjjj', 'nio@gnial.xon', '22222222', '');
+(8, 'rjjj', 'nio@gnial.xon', '22222222', ''),
+(9, 'admin', 'admin@admin.com', '11111111', 'admin');
 
 --
 -- Індекси збережених таблиць
@@ -180,7 +177,7 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT для таблиці `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
 --
 -- AUTO_INCREMENT для таблиці `product_order`
 --
@@ -190,7 +187,7 @@ ALTER TABLE `product_order`
 -- AUTO_INCREMENT для таблиці `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;COMMIT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
