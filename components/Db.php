@@ -2,7 +2,7 @@
 
 class Db
 {
-    
+//    Підключення до БД
     public static function getConnection()
     {
         $paramsPath = ROOT . '/config/db_params.php';

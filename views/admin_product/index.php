@@ -9,13 +9,13 @@
             <div class="breadcrumbs">
                 <ol class="breadcrumb">
                     <li><a href="/admin">Админпанель</a></li>
-                    <li class="active">Управление товарами</li>
+                    <li class="active">Управління товарами</li>
                 </ol>
             </div>
 
-            <a href="/admin/product/create" class="btn btn-default back"><i class="fa fa-plus"></i> Добавить товар</a>
+            <a href="/admin/product/create" class="btn btn-default back"><i class="fa fa-plus"></i> Додати товар</a>
 
-            <h4>Список товаров</h4>
+            <h4>Список товарів</h4>
 
             <br/>
 
@@ -23,8 +23,8 @@
                 <tr>
                     <th>ID товара</th>
                     <th>Артикул</th>
-                    <th>Название товара</th>
-                    <th>Цена</th>
+                    <th>Назва товара</th>
+                    <th>Ціна</th>
                     <th></th>
                     <th></th>
                 </tr>
@@ -34,8 +34,8 @@
                     <td><?php echo $product['code']; ?></td>
                     <td><?php echo $product['name']; ?></td>
                     <td><?php echo $product['price']; ?></td>  
-                    <td><a href="/admin/product/update/<?php echo $product['id']; ?>" title="Редактировать"><i class="fa fa-pencil-square-o"></i></a></td>
-                    <td><a href="/admin/product/delete/<?php echo $product['id']; ?>" title="Удалить"><i class="fa fa-times"></i></a></td>
+                    <td><a href="/admin/product/update/<?php echo $product['id']; ?>" title="Редагувати"><i class="fa fa-pencil-square-o"></i></a></td>
+                    <td><a href="/admin/product/delete/<?php echo $product['id']; ?>" title="Видалити"><i class="fa fa-times"></i></a></td>
                 </tr>
                 <?php endforeach; ?>
             </table>

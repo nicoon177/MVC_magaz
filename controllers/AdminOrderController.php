@@ -1,8 +1,9 @@
 <?php
 
+// Управління замовленнями 
 class AdminOrderController extends AdminBase
 {
-    
+//    Головна замовлень
     public function actionIndex()
     {
         
@@ -13,7 +14,8 @@ class AdminOrderController extends AdminBase
         require_once(ROOT . '/views/admin_order/index.php');
         return true;
     }
-    
+     
+//    Обновлення замовлення
     public function actionUpdate($id)
     {
         
@@ -37,6 +39,7 @@ class AdminOrderController extends AdminBase
         return true;
     }
     
+//    перегляд замовлень
     public function actionView($id)
     {
         
@@ -54,6 +57,7 @@ class AdminOrderController extends AdminBase
         return true;
     }
     
+//    Видалення замовлення
     public function actionDelete($id)
     {
         

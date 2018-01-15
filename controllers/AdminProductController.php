@@ -1,8 +1,9 @@
 <?php
 
+//Управління продуктами
 class AdminProductController extends AdminBase
 {
-    
+//    Головна продиктів
     public function actionIndex()
     {
         
@@ -14,6 +15,7 @@ class AdminProductController extends AdminBase
         return true;
     }
     
+//    видалення продикту
     public function actionDelete($id)
     {
         
@@ -31,6 +33,7 @@ class AdminProductController extends AdminBase
         
     }
     
+//    Створення продукту
     public function actionCreate()
     {
         
@@ -75,6 +78,7 @@ class AdminProductController extends AdminBase
         return true;
     }
     
+//    Обновлення продукту
     public function actionUpdate($id)
     {
         self::checkAdmin();

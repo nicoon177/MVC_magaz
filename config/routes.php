@@ -48,7 +48,7 @@ return array(
     //Адмін панель
     'admin' => 'admin/index',
     
-    //О магазині
+    //Про магазин
     'contacts' => 'site/contact',
     'about' => 'site/about',
     

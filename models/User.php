@@ -1,8 +1,10 @@
 <?php
 
+//Користувач
 class User
 {
     
+//    Регістрація
     public static function register($name, $email, $password) 
     {
         $db = Db::getConnection();
@@ -17,6 +19,7 @@ class User
         return $result->execute();
     }
     
+//    Перевірка даних користувача
     public static function checkUserData($email, $password)
     {
         $db = Db::getConnection();
@@ -35,11 +38,13 @@ class User
         return false;
     }
     
+//    Авторизація
     public static function auth($userId)
     {
         $_SESSION['user'] = $userId;
     }
     
+//    Перевірка входу
     public static function checkLogged()
     {
         
@@ -50,6 +55,7 @@ class User
         header("Location: /user/login");
     }
     
+//    Відвудувач гість
     public static function isGuest()
     {
         
@@ -59,6 +65,7 @@ class User
         return true;
     }
     
+//    Отриманн користувача по ID
     public static function getUserById($id)
     {
         if ($id) {
@@ -75,6 +82,7 @@ class User
         }
     }
     
+//    Обновлення даних
     public static function edit($id, $name, $password)
     {
         
@@ -90,6 +98,7 @@ class User
         
     }
     
+//    Перевірка імені
     public static function checkName($name)
     {
         if(strlen($name) >= 3) {
@@ -98,6 +107,7 @@ class User
         return false;
     }
     
+//    Перевірка паролю
     public static function checkPassword($password)
     {
         if (strlen($password) >= 6) {
@@ -106,6 +116,7 @@ class User
         return false;
     }
     
+//    Перевірка телефона
     public static function checkPhone($userPhone)
     {
         if (strlen($userPhone) >= 10) {
@@ -114,6 +125,7 @@ class User
         return false;
     }
     
+//    Перевірка Email
     public static function checkEmail($email)
     {
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -122,6 +134,7 @@ class User
         return false;
     }
     
+//    Перевірка на існуючий Email
     public static function checkEmailExists($email)
     {
         $db = Db::getConnection();

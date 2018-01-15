@@ -1,11 +1,11 @@
 <?php 
-
+//Адміністратор - керування карегоріми
 class AdminCategoryController extends AdminBase
 {
     
     public function actionIndex()
     {
-        
+//      Перевірка на адміна
         self::checkAdmin();
         
         $categoriesList = Category::getCategoriesListAdmin();
@@ -15,6 +15,7 @@ class AdminCategoryController extends AdminBase
         
     }
     
+//    Створення Категорії
     public function actionCreate()
     {
         
@@ -47,6 +48,7 @@ class AdminCategoryController extends AdminBase
         
     }
     
+//    Обновлення категорії
     public function actionUpdate($id)
     {
         
@@ -70,6 +72,7 @@ class AdminCategoryController extends AdminBase
         
     }
     
+//    Видалення категорії
     public function actionDelete($id)
     {
         

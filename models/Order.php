@@ -1,8 +1,10 @@
 <?php 
 
+//Замовлення
 class Order
 {
         
+//    Збереження замовлення
     public static function save($userName, $userPhone, $userComment, $userId, $products)
     {
         $db = Db::getConnection();
@@ -22,6 +24,7 @@ class Order
         return $result->execute();
     }
     
+//    Вибір замовлень
     public static function getOrdersList()
     {
         
@@ -45,11 +48,12 @@ class Order
         
     }
     
+ //    Відображення статусу замовлення
     public static function getStatusText($status)
     {
         switch($status) {
             case '1':
-                return 'Новий заказ';
+                return 'Нове замовлення';
                 break;
             case '2':
                 return 'В обробці';
@@ -63,6 +67,7 @@ class Order
         }
     }
     
+//    Вибір замовленння по ID
     public static function getOrderById($id)
     {
         
@@ -80,6 +85,7 @@ class Order
         return $result->fetch();
     }
     
+//    Вдалення замовленння по ID
     public static function deleteOrderById($id)
     {
         $db = Db::getConnection();
@@ -91,6 +97,7 @@ class Order
         return $resutl->execute();
     }
     
+//    Обновлення замовленння по ID
     public static function updateOrderById($id, $userName, $userPhone, $userComment, $date, $status)
     {
         $db = Db::getConnection();

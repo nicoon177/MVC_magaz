@@ -1,9 +1,9 @@
 <?php
 
-
+//  Продукт
 class ProductController
 {
-    
+//    Інформація про товар
     public function actionView($productId)
     {
         $categories = array();

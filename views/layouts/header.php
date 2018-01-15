@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Главная</title>
+        <title>Головна</title>
         <link href="/template/css/bootstrap.min.css" rel="stylesheet">
         <link href="/template/css/font-awesome.min.css" rel="stylesheet">
         <link href="/template/css/prettyPhoto.css" rel="stylesheet">
@@ -22,17 +22,17 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/template/images/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/template/images/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="/template/images/ico/apple-touch-icon-57-precomposed.png">
-    </head><!--/head-->
+    </head>
 
     <body>
-        <header id="header"><!--header-->
-            <div class="header_top"><!--header_top-->
+        <header id="header">
+            <div class="header_top">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="contactinfo">
                                 <ul class="nav nav-pills">
-                                    <li><a href="#"><i class="fa fa-phone"></i> +38 097 000 00 00</a></li>
+                                    <li><a href="#"><i class="fa fa-phone"></i> +38 097 263 75 24</a></li>
                                     <li><a href="#"><i class="fa fa-envelope"></i> nicoon177@gmail.com</a></li>
                                 </ul>
                             </div>
@@ -40,21 +40,21 @@
                         <div class="col-sm-6">
                             <div class="social-icons pull-right">
                                 <ul class="nav navbar-nav">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-vk"></i></a></li>
                                     <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div><!--/header_top-->
+            </div>
 
-            <div class="header-middle"><!--header-middle-->
+            <div class="header-middle">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="logo pull-left">
-                                <a href="/"><img src="/template/images/home/logo.png" alt="" /></a>
+                                <a href="/"><img src="/template/images/home/logo_new.jpg" alt="" /></a>
                             </div>
                         </div>
                         <div class="col-sm-8">
@@ -65,7 +65,7 @@
                                     <?php if(User::isGuest()): ?>
                                         <li><a href="/user/login/"><i class="fa fa-lock"></i> Вхід</a></li>
                                     <?php else: ?>
-                                        <li><a href="/cabinet/"><i class="fa fa-user"></i> Аккаунт</a></li>
+                                        <li><a href="/cabinet/"><i class="fa fa-user"></i> Акаунт</a></li>
                                         <li><a href="/user/logout/"><i class="fa fa-unlock"></i> Вихід</a></li>
                                     <?php endif; ?>
                                 </ul>
@@ -73,9 +73,9 @@
                         </div>
                     </div>
                 </div>
-            </div><!--/header-middle-->
+            </div>
 
-            <div class="header-bottom"><!--header-bottom-->
+            <div class="header-bottom">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
@@ -89,21 +89,21 @@
                             </div>
                             <div class="mainmenu pull-left">
                                 <ul class="nav navbar-nav collapse navbar-collapse">
-                                    <li><a href="/">Главная</a></li>
+                                    <li><a href="/">Головна</a></li>
                                     <li class="dropdown"><a href="#">Магазин<i class="fa fa-angle-down"></i></a>
                                         <ul role="menu" class="sub-menu">
-                                            <li><a href="/catalog/">Каталог товаров</a></li>
+                                            <li><a href="/catalog/">Каталог товарів</a></li>
                                             <li><a href="/cart/">Корзина</a></li> 
                                         </ul>
                                     </li> 
                                     <li><a href="/blog/">Блог</a></li> 
-                                    <li><a href="/about/">О магазине</a></li>
-                                    <li><a href="/contacts/">Контакты</a></li>
+                                    <li><a href="/about/">Про магазин</a></li>
+                                    <li><a href="/contacts/">Контакти</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div><!--/header-bottom-->
+            </div>
             
-        </header><!--/header-->
+        </header>

@@ -2,7 +2,7 @@
 
 class SiteController
 {
-    
+//    Головна 
     public function actionIndex()
     {
         $categories = array();
@@ -18,6 +18,7 @@ class SiteController
         return true;
     }
     
+//    Відправлення на пошту
     public function actionContact()
     {
         
@@ -52,6 +53,7 @@ class SiteController
         
     }
     
+//    Виклик сторінки про магазин
     public function actionAbout ()
     {
         

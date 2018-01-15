@@ -2,7 +2,7 @@
 
 class CatalogController
 {
-
+//    Головна список товарів
     public function actionIndex()
     {
         $categories = array();
@@ -16,6 +16,7 @@ class CatalogController
         return true;
     }
     
+//    Вивід усіх товарів
     public function actionCategory($categoryId, $page = 1)
     {
         

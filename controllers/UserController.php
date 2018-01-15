@@ -1,8 +1,9 @@
 <?php 
 
+//Користувач
 class UserController
 {
-    
+//    Регістація
     public function actionRegister()
     {
         $name = false;
@@ -46,6 +47,7 @@ class UserController
         return true;
     }
     
+//    Вхід на сайт
     public function actionLogin()
     {
         $email = false;
@@ -84,6 +86,7 @@ class UserController
         return true;
     }
     
+//    Вихід з сайта
     public function actionLogout()
     {
         unset($_SESSION['user']);

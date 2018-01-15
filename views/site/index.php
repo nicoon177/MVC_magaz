@@ -24,7 +24,7 @@
 
             <div class="col-sm-9 padding-right">
                 <div class="features_items"><!--features_items-->
-                    <h2 class="title text-center">Последние товары</h2>
+                    <h2 class="title text-center">Останні товари</h2>
 
                     <?php foreach ($latestProducts as $product): ?>
                     <div class="col-sm-4">
@@ -49,10 +49,10 @@
                     <?php endforeach; ?>
 
 
-                </div><!--features_items-->
+                </div>
 
-                <div class="recommended_items"><!--recommended_items-->
-                    <h2 class="title text-center">Рекомендуемые товары</h2>
+                <div class="recommended_items">
+                    <h2 class="title text-center">Рекомендованні товари</h2>
 
                     <div class="cycle-slideshow" 
                          data-cycle-fx=carousel
@@ -94,7 +94,7 @@
 
                     
 
-                </div><!--/recommended_items-->
+                </div>
             </div>
 
         </div>  

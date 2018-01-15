@@ -22,18 +22,18 @@ class Router
     
     public function run()
     {
-        // Получити строку запроса
+        // Отримання запитиу
         $uri = $this->getURI();
         
-        //перевіряєм наявність запроса в routes.php
+        //перевірка наявності запиту в routes.php
         foreach ($this->routes as $uriPattern => $path){
             
-            // Зрівнюємо $uriPattern i $url
+            // Порівняння $uriPattern i $url
             if(preg_match("~$uriPattern~", $uri)){
                 
                 $internalRoute = preg_replace("~$uriPattern~", $path, $uri);
                     
-                // Визначаєм який контролер і актіон виконують запрос
+                // Визначення який  Controller and Action виконують запит
                 $segments = explode('/', $internalRoute);
                 
                 $controllerName = array_shift($segments).'Controller';
@@ -43,14 +43,14 @@ class Router
                 
                 $parameters = $segments;
                 
-                // підключити файл класа-контролера
+                // підключення файл класа-controller
                 $controllerFile = ROOT . '/controllers/' . $controllerName . '.php';
                 
                 if(file_exists($controllerFile)){
                     include_once($controllerFile);
                 }
                 
-                // Сторити обєкт визвати метод
+                // Створення обєкта, виклик метода
                 $controllerObject = new $controllerName;
                 
                 $result = call_user_func_array(array($controllerObject, $actionName), $parameters);

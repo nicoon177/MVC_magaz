@@ -10,7 +10,7 @@
             
             <ul>
                 <li><a href="/cabinet/edit">Редагувати дані</a></li>
-                <li><a href="/user/history">Список покупок</a></li>
+                <li><a href="/user/history">Список покупків</a></li>
             </ul>
             
         </div>

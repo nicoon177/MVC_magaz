@@ -1,8 +1,9 @@
 <?php 
 
+//Особистий кабінет користувача
 class CabinetController 
 {
-    
+//    Головна 
     public function actionIndex()
     {
         
@@ -16,6 +17,7 @@ class CabinetController
         
     }
     
+//    Редагування сторінки
     public function actionEdit()
     {
         $userId = User::checkLogged();

@@ -9,13 +9,13 @@
             <div class="breadcrumbs">
                 <ol class="breadcrumb">
                     <li><a href="/admin">Админпанель</a></li>
-                    <li><a href="/admin/order">Управление заказами</a></li>
-                    <li class="active">Редактировать заказ</li>
+                    <li><a href="/admin/order">Управління замовленнями</a></li>
+                    <li class="active">Редагувати замовлення</li>
                 </ol>
             </div>
 
 
-            <h4>Редактировать заказ #<?php echo $id; ?></h4>
+            <h4>Редагувати замовлення #<?php echo $id; ?></h4>
 
             <br/>
 
@@ -23,24 +23,24 @@
                 <div class="login-form">
                     <form action="#" method="post">
 
-                        <p>Имя клиента</p>
+                        <p>Імя клієнта</p>
                         <input type="text" name="userName" placeholder="" value="<?php echo $order['user_name']; ?>">
 
-                        <p>Телефон клиента</p>
+                        <p>Телефон клієнта</p>
                         <input type="text" name="userPhone" placeholder="" value="<?php echo $order['user_phone']; ?>">
 
-                        <p>Комментарий клиента</p>
+                        <p>Коментар клієнта</p>
                         <input type="text" name="userComment" placeholder="" value="<?php echo $order['user_comment']; ?>">
 
-                        <p>Дата оформления заказа</p>
+                        <p>Дата оформления замовлення</p>
                         <input type="text" name="date" placeholder="" value="<?php echo $order['date']; ?>">
 
                         <p>Статус</p>
                         <select name="status">
-                            <option value="1" <?php if ($order['status'] == 1) echo ' selected="selected"'; ?>>Новый заказ</option>
-                            <option value="2" <?php if ($order['status'] == 2) echo ' selected="selected"'; ?>>В обработке</option>
+                            <option value="1" <?php if ($order['status'] == 1) echo ' selected="selected"'; ?>>Нове Замовлення</option>
+                            <option value="2" <?php if ($order['status'] == 2) echo ' selected="selected"'; ?>>В опрацюванні</option>
                             <option value="3" <?php if ($order['status'] == 3) echo ' selected="selected"'; ?>>Доставляется</option>
-                            <option value="4" <?php if ($order['status'] == 4) echo ' selected="selected"'; ?>>Закрыт</option>
+                            <option value="4" <?php if ($order['status'] == 4) echo ' selected="selected"'; ?>>Закрито</option>
                         </select>
                         <br>
                         <br>

@@ -1,8 +1,8 @@
 <?php
-
+ 
 class AdminController extends AdminBase
 {
-    
+//    Головна сторінка
     public function ActionIndex()
     {
         self::checkAdmin();

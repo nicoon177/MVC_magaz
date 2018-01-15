@@ -9,21 +9,21 @@
             <div class="breadcrumbs">
                 <ol class="breadcrumb">
                     <li><a href="/admin">Админпанель</a></li>
-                    <li class="active">Управление заказами</li>
+                    <li class="active">Управління замовленнями</li>
                 </ol>
             </div>
 
-            <h4>Список заказов</h4>
+            <h4>Список замовлень</h4>
 
             <br/>
 
 
             <table class="table-bordered table-striped table">
                 <tr>
-                    <th>ID заказа</th>
-                    <th>Имя покупателя</th>
-                    <th>Телефон покупателя</th>
-                    <th>Дата оформления</th>
+                    <th>ID Зомовлення</th>
+                    <th>Імя покупця</th>
+                    <th>Телефон покупця</th>
+                    <th>Дата оформлення</th>
                     <th>Статус</th>
                     <th></th>
                     <th></th>

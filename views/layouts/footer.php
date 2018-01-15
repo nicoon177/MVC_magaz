@@ -1,13 +1,13 @@
-<footer id="footer"><!--Footer-->
+<footer id="footer">
     <div class="footer-bottom">
         <div class="container">
             <div class="row">
-                <p class="pull-left">Copyright © 2017</p>
-                <p class="pull-right">Сайт створений для дипломної роботи Андрущака М.І.</p>
+                <p class="pull-left">Copyright © 2017-2018</p>
+                <p class="pull-right">Сайт створений для дипломної роботи Андрущак М.І.</p>
             </div>
         </div>
     </div>
-</footer><!--/Footer-->
+</footer>
 
 
 

@@ -1,9 +1,12 @@
 <?php
 
+//Продукти
 class Product
 {
+//    Значення по замовчуванню
     const SHOW_BY_DEFOULT = 6;
     
+//    Отримання останніх продуктів
     public static function getLatesProduct($count = self::SHOW_BY_DEFOULT)
     {
         
@@ -33,6 +36,7 @@ class Product
         return $productList;
     }
     
+//    Отримання продуктів згідноо категорії
     public static function getProductsListByCategory($categoryId = false, $page = 1)
     {
         
@@ -62,6 +66,7 @@ class Product
         }
     }
     
+//    Отримання продуктів по ID
     public static function getProductById($id)
     {
         $id = intval($id);
@@ -78,6 +83,7 @@ class Product
         }
     }
     
+//    Отримання загальної кількості продуктів
     public static function getTotalProductsInCategory($categoryId)
     {
         $db = Db::getConnection();
@@ -90,6 +96,7 @@ class Product
         return $row['count'];
     }
     
+//    Продукти які є в наявності
     public static function getProductsByIds($idsArray)
     {
         
@@ -117,6 +124,7 @@ class Product
         return $products;
     }
     
+//    Отримання списку продуктів
     public static function getProductsList()
     {
         
@@ -136,6 +144,7 @@ class Product
         
     }
     
+//    Отримання рекомендованих продуктів
     public static function getRecommendedProducts()
     {
         
@@ -157,6 +166,7 @@ class Product
         
     }
     
+//    Вибір фотографій
     public static function getImage($id)
     {
         $noImage = 'no-image.jpg';
@@ -172,6 +182,7 @@ class Product
         return $path . $noImage;
     }
     
+//    Видалення продукту згідно ID
     public static function deleteProductById($id)
     {
         
@@ -185,6 +196,7 @@ class Product
         
     }
     
+//    Створення продукту
     public static function createProduct($options)
     {
         
@@ -211,6 +223,7 @@ class Product
         
     }
     
+//    Обновлення продуктів по ID
     public static function updateProductById($id, $options)
     {
         
@@ -234,6 +247,7 @@ class Product
         
     }
     
+//    Статус продукту
     public static function getAvailabilyText($availability)
     {
         switch($availability) {

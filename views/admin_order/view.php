@@ -9,61 +9,61 @@
             <div class="breadcrumbs">
                 <ol class="breadcrumb">
                     <li><a href="/admin">Админпанель</a></li>
-                    <li><a href="/admin/order">Управление заказами</a></li>
-                    <li class="active">Просмотр заказа</li>
+                    <li><a href="/admin/order">Управління замовленнями</a></li>
+                    <li class="active">Перегляд замовлення</li>
                 </ol>
             </div>
 
 
-            <h4>Просмотр заказа #<?php echo $order['id']; ?></h4>
+            <h4>Перегляд замовлення #<?php echo $order['id']; ?></h4>
             <br/>
 
 
 
 
-            <h5>Информация о заказе</h5>
+            <h5>Информація про замовлення</h5>
             <table class="table-admin-small table-bordered table-striped table">
                 <tr>
-                    <td>Номер заказа</td>
+                    <td>Номер замовлення</td>
                     <td><?php echo $order['id']; ?></td>
                 </tr>
                 <tr>
-                    <td>Имя клиента</td>
+                    <td>Імя кліента</td>
                     <td><?php echo $order['user_name']; ?></td>
                 </tr>
                 <tr>
-                    <td>Телефон клиента</td>
+                    <td>Телефон кліента</td>
                     <td><?php echo $order['user_phone']; ?></td>
                 </tr>
                 <tr>
-                    <td>Комментарий клиента</td>
+                    <td>Коментар кліента</td>
                     <td><?php echo $order['user_comment']; ?></td>
                 </tr>
                 <?php if ($order['user_id'] != 0): ?>
                 <tr>
-                    <td>ID клиента</td>
+                    <td>ID кліента</td>
                     <td><?php echo $order['user_id']; ?></td>
                 </tr>
                 <?php endif; ?>
                 <tr>
-                    <td><b>Статус заказа</b></td>
+                    <td><b>Статус замовлення</b></td>
                     <td><?php echo Order::getStatusText($order['status']); ?></td>
                 </tr>
                 <tr>
-                    <td><b>Дата заказа</b></td>
+                    <td><b>Дата замовлення</b></td>
                     <td><?php echo $order['date']; ?></td>
                 </tr>
             </table>
 
-            <h5>Товары в заказе</h5>
+            <h5>Замовлені товари</h5>
 
             <table class="table-admin-medium table-bordered table-striped table ">
                 <tr>
                     <th>ID товара</th>
                     <th>Артикул товара</th>
-                    <th>Название</th>
-                    <th>Цена</th>
-                    <th>Количество</th>
+                    <th>Назва</th>
+                    <th>Ціна</th>
+                    <th>Кількість</th>
                 </tr>
                 <?php foreach ($products as $product): ?>
                 <tr>

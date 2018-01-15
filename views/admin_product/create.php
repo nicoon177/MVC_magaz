@@ -9,13 +9,13 @@
             <div class="breadcrumbs">
                 <ol class="breadcrumb">
                     <li><a href="/admin">Админпанель</a></li>
-                    <li><a href="/admin/product">Управление товарами</a></li>
-                    <li class="active">Редактировать товар</li>
+                    <li><a href="/admin/product">Управління товарами</a></li>
+                    <li class="active">Редагувати товар</li>
                 </ol>
             </div>
 
 
-            <h4>Добавить новый товар</h4>
+            <h4>Додати новий товар</h4>
 
             <br/>
 
@@ -31,16 +31,16 @@
                 <div class="login-form">
                     <form action="#" method="post" enctype="multipart/form-data">
 
-                        <p>Название товара</p>
+                        <p>Назва товара</p>
                         <input type="text" name="name" placeholder="" value="">
 
                         <p>Артикул</p>
                         <input type="text" name="code" placeholder="" value="">
 
-                        <p>Стоимость, $</p>
+                        <p>Вартість, $</p>
                         <input type="text" name="price" placeholder="" value="">
 
-                        <p>Категория</p>
+                        <p>Категорія</p>
                         <select name="category_id">
                             <?php if (is_array($categoriesList)): ?>
                             <?php foreach ($categoriesList as $category): ?>
@@ -53,50 +53,50 @@
 
                         <br/><br/>
 
-                        <p>Производитель</p>
+                        <p>Виробник</p>
                         <input type="text" name="brand" placeholder="" value="">
 
-                        <p>Изображение товара</p>
+                        <p>Картинка товара</p>
                         <input type="file" name="image" placeholder="" value="">
 
-                        <p>Детальное описание</p>
+                        <p>Детальний опис</p>
                         <textarea name="description"></textarea>
 
                         <br/><br/>
 
-                        <p>Наличие на складе</p>
+                        <p>Наявність на складі</p>
                         <select name="availability">
-                            <option value="1" selected="selected">Да</option>
-                            <option value="0">Нет</option>
+                            <option value="1" selected="selected">Так</option>
+                            <option value="0">Ні</option>
                         </select>
 
                         <br/><br/>
 
                         <p>Новинка</p>
                         <select name="is_new">
-                            <option value="1" selected="selected">Да</option>
-                            <option value="0">Нет</option>
+                            <option value="1" selected="selected">так</option>
+                            <option value="0">Ні</option>
                         </select>
 
                         <br/><br/>
 
-                        <p>Рекомендуемые</p>
+                        <p>Рекомендовані</p>
                         <select name="is_recommended">
-                            <option value="1" selected="selected">Да</option>
-                            <option value="0">Нет</option>
+                            <option value="1" selected="selected">Так</option>
+                            <option value="0">Ні</option>
                         </select>
 
                         <br/><br/>
 
                         <p>Статус</p>
                         <select name="status">
-                            <option value="1" selected="selected">Отображается</option>
-                            <option value="0">Скрыт</option>
+                            <option value="1" selected="selected">Відображається</option>
+                            <option value="0">Сритий</option>
                         </select>
 
                         <br/><br/>
 
-                        <input type="submit" name="submit" class="btn btn-default" value="Сохранить">
+                        <input type="submit" name="submit" class="btn btn-default" value="Додати">
 
                         <br/><br/>
 

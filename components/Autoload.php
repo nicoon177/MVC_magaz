@@ -1,5 +1,5 @@
 <?php
-
+// функція автозагрузки файлів
 function __autoload($class_name)
 {
     

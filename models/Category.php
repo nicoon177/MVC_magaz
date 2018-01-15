@@ -3,7 +3,7 @@
 
 class Category
 {
-    
+//    Отримання категорій
     public static function getCategoriesList()
     {
         $db = Db::getConnection();
@@ -23,6 +23,7 @@ class Category
         return $categoryList;
     }   
     
+//    Отримання категорій для адміна
     public static function getCategoriesListAdmin()
     {
         
@@ -44,6 +45,7 @@ class Category
         
     }
     
+//    Видалення категорії
     public static function deleteCategoryById($id)
     {
         
@@ -57,6 +59,7 @@ class Category
         
     }
     
+//    Обновлення категорії
     public static function updateCategoryById($id, $name, $sortOrder, $status)
     {
         
@@ -73,6 +76,7 @@ class Category
         
     }
     
+//    Вибір категорії по ID
     public static function getCategoryById($id)
     {
         
@@ -91,6 +95,7 @@ class Category
         
     }
     
+//    Створення категорії
     public static function createCategory($name, $sortOrder, $status)
     {
         
@@ -105,6 +110,7 @@ class Category
         return $result->execute();
     }
     
+//    Відображення статусу доставки
     public static function getStatusText($status)
     {
         

@@ -1,8 +1,8 @@
 <?php 
-
+// Корзина
 class Cart
 {
-    
+//    Додавання в корзину
     public static function addProduct($id)
     {
         
@@ -26,6 +26,7 @@ class Cart
         
     }
     
+//    Кількісьть елемкнтів в корзині
     public static function countItems()
     {
         
@@ -44,6 +45,7 @@ class Cart
         
     }
     
+//    Відображення продуктів
     public static function getProducts()
     {
         if(isset($_SESSION['products'])) {
@@ -52,6 +54,7 @@ class Cart
         return false;
     }
     
+//    Підрахунок суми
     public static function getTotalPrice($products)
     {
         $productsInCart = self::getProducts();
@@ -65,6 +68,7 @@ class Cart
         return $total;
     }
     
+//    Очистка корзини
     public static function clear()
     {
         if(isset($_SESSION['products'])) {
@@ -72,6 +76,7 @@ class Cart
         }
     }
     
+//    Видалення продикту
     public static function deleteProduct($id)
     {
           
